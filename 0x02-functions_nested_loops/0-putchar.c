@@ -10,11 +10,11 @@
 int main(void)
 {
 	char message[8] = "_putchar";
-	
+
 	int message_length = strlen(message);
 
 	int i = 0;
-	
+
 	while (i < message_length)
 	{
 		_putchar(message[i]);
