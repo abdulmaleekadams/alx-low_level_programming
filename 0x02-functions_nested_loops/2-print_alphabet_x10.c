@@ -1,18 +1,22 @@
 #include "main.h"
 
 /**
- * print_alphabet_x10 - a function to print all alphabet x10 on a new line
+ * print_alphabet_x10 - function to be created
  *
- * Return: it returns nothing
+ * Return: Always 0
+ *
  */
 
 void print_alphabet_x10(void)
 {
-	int counter = 0;
+	char i;
+	int a;
 
-	while (counter < 10)
+	for (a = 1 ; a <= 10 ; a++)
 	{
-		print_alphabet();
-		counter++;
+		for (i = 'a' ; i <= 'z' ; i++)
+			_putchar(i);
+		_putchar('\n');
 	}
+
 }
