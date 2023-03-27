@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <string.h>
 /**
  * puts2 - print every other char of a string, startiing from first char
  *
@@ -10,9 +10,9 @@
 
 void puts2(char *str)
 {
-	int i = 0;
+	unsigned long int i = 0;
 
-	while (str[i] != '\0')
+	while (i < strlen(str))
 	{
 		_putchar(str[i]);
 		i += 2;
