@@ -2,7 +2,7 @@
 /**
  * _strlen - a function that returns the length of a string
  *
- * @s - the string parameter
+ * @s: the string parameter
  *
  * Return: the length of the string
  */
