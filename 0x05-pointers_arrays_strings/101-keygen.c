@@ -1,29 +1,39 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <math.h>
 
 /**
- * main - a program that generates random password
+ * main - print password.
  *
- * Return: Always success 0.
+ * Return: 0.
  */
 
 int main(void)
 {
-	int i, password_length = 11;
-	char password[12];
+	int ascii = 2772, i = 0, j, random;
+	char password[100];
+	time_t t;
 
-	/* Random number generator */
-	srand(time(NULL));
-
-	for (i = 0; i < password_length; i++)
+	srand((int) time(&t));
+	while (ascii > 126)
 	{
-		/* Generate random printable ASCII character */
-		password[i] = rand() % 94 + 32;
+		random = rand() % 126;
+		password[i] = random;
+		ascii -= random;
+		i++;
 	}
-	password[11] = '\0';
+	if (ascii > 0)
+		password[i] = ascii;
+	else
+	{
+		i--;
+	}
+	
 
-	printf("%s\n", password);
-
+	for (j = 0; j <= i; j++)
+	{
+		printf("%c", password[j]);
+	}
 	return (0);
 }
