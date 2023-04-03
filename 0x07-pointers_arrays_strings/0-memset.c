@@ -11,8 +11,8 @@
 char *_memset(char *s, char b, unsigned int n)
 {
 	/* loop over the memory area n time*/
-	while (n-- > 0)
-		*s++ = b;
+	while (n--)
+		s[n] = b;
 
 	return s;
 }
