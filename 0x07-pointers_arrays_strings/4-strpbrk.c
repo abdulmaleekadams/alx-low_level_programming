@@ -1,3 +1,4 @@
+#include <stdlib.h>
 /**
  * _strpbrk - a function that searches for any of a set of bytes
  *
@@ -9,13 +10,14 @@
 
 char *_strpbrk(char *s, char *accept)
 {
+	int i;
+
 	while (*s)
 	{
-		while (*accept)
+		for (i = 0; accept[i]; i++)
 		{
-			if (*s == *accept)
+			if (*s == accept[i])
 				return (s);
-			accept++;
 		}
 		s++;
 	}
