@@ -5,7 +5,7 @@
  * @s: the string
  * @accept: the set of character to be matched
  *
- * Return: a pointer to the byte in s that matches one of the bytes in @accept, or NULL
+ * Return: s or NULL
  */
 
 char *_strpbrk(char *s, char *accept)
