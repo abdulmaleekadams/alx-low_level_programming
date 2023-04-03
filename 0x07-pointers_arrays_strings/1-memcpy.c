@@ -7,10 +7,10 @@
  *
  * Return: a pointer to dest
  */
-
+i
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	while(n--)
+	while (n--)
 		dest[n] = src[n];
 
 	return (dest);
