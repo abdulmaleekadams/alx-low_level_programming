@@ -2,9 +2,9 @@
 
 int main(void)
 {
-	char buffer[98] = {0};
+	char *s = "hello";
 
-	printf("%s\n", typeof(buffer + 50));
+	printf("%c\n", *s);
 
 	return 0;
 }
