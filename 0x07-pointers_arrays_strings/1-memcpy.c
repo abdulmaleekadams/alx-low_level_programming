@@ -7,7 +7,7 @@
  *
  * Return: a pointer to dest
  */
-i
+
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
 	unsigned int c;
