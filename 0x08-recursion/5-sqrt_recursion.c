@@ -17,7 +17,11 @@ int sqrt_finder(int n, int sqrt_of_n)
 		return (sqrt_finder(n, sqrt_of_n + 1));
 }
 
-/**                                                                                                      * _sqrt_recursion - a function that returns the natural square root of a num                            *                                                                                                       * @n: the number                                                                                        *                                                                                                       * Return: return the square root or -1 for num without natural sqrt                                     */ 
+/**
+ *  _sqrt_recursion - a function that returns the natural square root of a num
+ *  @n: the number
+ *  Return: return the square root or -1 for num without natural sqrt
+ */ 
 
 int _sqrt_recursion(int n)
 {
