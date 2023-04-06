@@ -18,7 +18,7 @@ int _strlen_recursion(char *s)
 
 /**
  * palindrome_helper - eveluate the string
- * 
+ *
  * @str: the string
  * @len: the number of char in the string
  * @idx: the index of the string
