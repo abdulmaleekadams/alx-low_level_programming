@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
 	int i, j;
 
 	if (argc == 1)
-		printf("0\n");
+		sum = 0;
 	else
 		for (i = 1; i < argc; i++)
 		{
@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
 				if (!isdigit(argv[i][j]))
 				{
 					printf("Error\n");
-					
+
 					return (1);
 				}
 			}
