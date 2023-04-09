@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 
 		return (1);
 	}
-	
+
 	cent = atoi(argv[1]);
 
 	if (cent < 0)
