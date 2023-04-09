@@ -1,4 +1,3 @@
-#include <string.h>
 #include "main.h"
 
 /**
@@ -11,12 +10,8 @@
 
 void _puts(char *str)
 {
-	unsigned long int i = 0;
+	while (*str != '\0')
+		_putchar(*str++);
 
-	while (i < strlen(str))
-	{
-		_putchar(str[i]);
-		i++;
-	}
 	_putchar('\n');
 }
