@@ -16,19 +16,19 @@ char *create_array(unsigned int size, char c)
 	char *arr;
 
 	if (size == 0)
-		return NULL;
+		return (NULL);
 
 	/* Memory Allocation */
 	arr = (char *) malloc(size * sizeof(c));
 
 	/* Check if memory allocation was successful */
 	if (arr == NULL)
-		return NULL;
+		return (NULL);
 
 	/* Initializing the array with the given char */
 	for (i = 0; i < size; i++)
 		arr[i] = c;
 
 	/* Return the pointer to the array */
-	return arr;
+	return (arr);
 }
