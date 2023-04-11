@@ -70,7 +70,7 @@ char *str_concat(char *s1, char *s2)
 		return (NULL);
 
 	/* Copy the content of both str into str_concat */
-	str_copy(s1, 0, len1, str_concat);	
+	str_copy(s1, 0, len1, str_concat);
 	str_copy(s2, len1, len2, str_concat);
 
 	/* Add the null terminator */
