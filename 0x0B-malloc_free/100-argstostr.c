@@ -29,7 +29,7 @@ char *argstostr(int ac, char **av)
 	}
 
 	/* Memory allocation for the concatenated string */
-	str = malloc(len * sizeof(char));
+	str = malloc(len * sizeof(char) + 1);
 
 	/* Check if memory is allocated */
 	if (str == NULL)
