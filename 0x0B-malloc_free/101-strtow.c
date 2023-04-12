@@ -58,7 +58,7 @@ char **strtow(char *str)
 	char **words_arr, *tmp;
 	int i, j, wc = 0, len = 0;
 
-	if (str = NULL || str[0] == '\0')
+	if (str == NULL || str[0] == '\0')
 		return (NULL);
 
 	/* Count the number of words in @str */
@@ -84,7 +84,7 @@ char **strtow(char *str)
 		words_arr[i] = malloc(sizeof(char) * (len + 1));
 
 		/* check if allocation fails */
-		if (word_arr[i] == NULL)
+		if (words_arr[i] == NULL)
 		{
 			for (j = 0; j < i; j++)
 				free(words_arr[j]);
