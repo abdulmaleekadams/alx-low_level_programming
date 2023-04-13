@@ -64,6 +64,9 @@ char **strtow(char *str)
 	/* Count the number of words in @str */
 	wc = words_counter(str);
 
+	if (wc == 0)
+		return (NULL);
+
 	/* Allocate memory for the words array */
 	words_arr = malloc(sizeof(char *) * (wc + 1));
 
@@ -76,7 +79,6 @@ char **strtow(char *str)
 		/* Skip over leading spaces */
 		while (*str == ' ')
 			str++;
-
 		/* Get the length of the current word */
 		len = word_len(str);
 
@@ -88,20 +90,15 @@ char **strtow(char *str)
 		{
 			for (j = 0; j < i; j++)
 				free(words_arr[j]);
-
 			free(words_arr);
 			return (NULL);
 		}
-
 		tmp = words_arr[i];
 
 		while (*str && *str != ' ')
 			*tmp++ = *str++;
-
 		*tmp = '\0';
 	}
-
 	words_arr[i] = NULL;
-
 	return (words_arr);
 }
