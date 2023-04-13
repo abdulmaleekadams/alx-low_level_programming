@@ -57,7 +57,7 @@ char **strtow(char *str)
 {
 	char **words_arr, *tmp;
 	int i, j, wc = 0, len = 0;
-	
+
 	wc = words_counter(str);
 	if (str == NULL || str[0] == '\0' || wc == 0)
 		return (NULL);
