@@ -1,7 +1,7 @@
 #include <stdlib.h>
 
 /**
- * words_counter - counts the number of words in a string
+ * words_counter - Counts the number of words in a string
  *
  * @str: the string to be counted
  *
@@ -45,7 +45,7 @@ int word_len(char *str)
 }
 
 /**
- * strtow = splits a string into words
+ * strtow - splits a string into words
  *
  * @str: the string to be split
  *
