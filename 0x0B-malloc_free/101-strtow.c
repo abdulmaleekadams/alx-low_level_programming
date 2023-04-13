@@ -57,23 +57,16 @@ char **strtow(char *str)
 {
 	char **words_arr, *tmp;
 	int i, j, wc = 0, len = 0;
-
-	if (str == NULL || str[0] == '\0')
-		return (NULL);
-
-	/* Count the number of words in @str */
+	
 	wc = words_counter(str);
-
-	if (wc == 0)
+	if (str == NULL || str[0] == '\0' || wc == 0)
 		return (NULL);
-
 	/* Allocate memory for the words array */
 	words_arr = malloc(sizeof(char *) * (wc + 1));
 
 	/* Check if allocation is successful */
 	if (words_arr == NULL)
 		return (NULL);
-
 	for (i = 0; i < wc; i++)
 	{
 		/* Skip over leading spaces */
