@@ -5,7 +5,6 @@
 
 /**
  * error_exit - prints an error message exits with status 98
- * @msg: the error message to print
  */
 void error_exit(void)
 {
@@ -37,7 +36,8 @@ int is_digit(char *str)
 	return (1);
 }
 
- /* main - multiply two numbrs
+/**
+ * main - multiply two numbrs
  * @argc: number of arguments
  * @argv: array of argument
  *
@@ -47,12 +47,11 @@ int main(int argc, char *argv[])
 {
 	int i, num1, num2, *result, len1, len2, t_len, digit, v = 0;
 	char *num1_str, *num2_str;
+
 	num1_str = argv[1];
 	num2_str = argv[2];
-
 	if (argc != 3 || !is_digit(argv[1]) || !is_digit(argv[2]))
 		error_exit();
-
 	len1 = strlen(num1_str);
 	len2 = strlen(num2_str);
 	t_len = len1 + len2 + 1;
