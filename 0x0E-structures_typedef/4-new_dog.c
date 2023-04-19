@@ -13,7 +13,7 @@ int str_len(char *str)
 
 	while (str[len] != '\0')
 		len++;
-	return len;
+	return (len);
 }
 
 /**
@@ -30,7 +30,7 @@ char *str_copy(char *dest, char *src)
 	for (i = 0; src[i] != '\0'; i++)
 		dest[i] = src[i];
 	dest[i] = '\0';
-	return dest;
+	return (dest);
 }
 
 /**
@@ -46,6 +46,9 @@ dog_t *new_dog(char *name, float age, char *owner)
 	dog_t *dog;
 
 	int name_len, owner_len;
+
+	if (name == NULL || owner == NULL)
+		return NULL;
 
 	name_len = str_len(name);
 	owner_len = str_len(owner);
