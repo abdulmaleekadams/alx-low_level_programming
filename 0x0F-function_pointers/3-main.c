@@ -14,17 +14,22 @@ int main(int argc, char *argv[])
 	if (argc == 4)
 	{
 		int num_1, num_2;
-		int (*op)(int, int);
+		char *op;
 
 		num_1 = atoi(argv[1]);
 		num_2 = atoi(argv[3]);
-		op = get_op_func(argv[2]);
-		if ((*argv[2] == '%' || *argv[2] == '/') && num_2 == 0)
+		op = argv[2];
+		if (((*op == '%' || *op == '/') && num_2 == 0) || op[1] != '\0')
 		{
 			printf("Error\n");
 			exit(-1);
 		}
-		printf("%d\n", op(num_1, num_2));
+		if (get_op_func(op) == NULL)
+		{
+			printf("Error\n");
+			exit(-1);
+		}
+		printf("%d\n", get_op_func(op)(num_1, num_2));
 		return (0);
 	}
 	printf("Error\n");
