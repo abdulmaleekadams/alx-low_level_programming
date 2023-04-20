@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
 		if (get_op_func(op) == NULL || op[1] != '\0')
 		{
 			printf("Error\n");
-			exit(100);
+			exit(99);
 		}
 		printf("%d\n", get_op_func(op)(num_1, num_2));
 		return (0);
