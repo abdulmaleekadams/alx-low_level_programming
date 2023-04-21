@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <stdarg.h>
+#include "variadic_functions.h"
 /**
  * sum_them_all - sum all args
  * @n: inter=gers to sum
