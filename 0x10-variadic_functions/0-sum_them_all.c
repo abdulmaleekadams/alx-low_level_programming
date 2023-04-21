@@ -3,7 +3,7 @@
 /**
  * sum_them_all - sum all args
  * @n: inter=gers to sum
- * 
+ *
  * Return: the sum
  */
 int sum_them_all(const unsigned int n, ...)
