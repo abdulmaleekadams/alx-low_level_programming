@@ -3,13 +3,13 @@
 #include <stdlib.h>
 
 /**
- * binary_to_digit - function that convert a binary number
+ * binary_to_uint - function that convert a binary number
  * to an unsigned int
  * @b: is point to a string of 0 and 1 chars
  * Return: the converted number on success, else 0
  */
 
-unsigned int binary_to_digit(const char *b)
+unsigned int binary_to_uint(const char *b)
 {
 	unsigned int uint = 0;
 
