@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * flip_bit - function that returns the number of bits to be flipped
+ * flip_bits - function that returns the number of bits to be flipped
  * @n: the first number
  * @m: the second number
  * Return: the number of bits required to flip
